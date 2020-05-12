@@ -2,27 +2,33 @@
 
 int main() {
   int n = 4;
+  int i = 1;
 
   //Parte superior
-  for (int i=1; i<=n; i++)
+  while (i<=n)
   {
-    int cont = 2;
-    for (int j=1; j<=i; j++ ){
+    int cont = 2, j = 1;
+    while (j<=i){
       printf(" %d", cont);
       cont += 2;
+      j++;
     }
     printf("\n");
+    i++;
   }
 
   //Parte inferior
-  for (int i=n-1; i>0; i--)
+  i = n-1;
+  while (i>0)
   {
-    int cont = 2;
-    for (int j=i; j>0; j-- ){
+    int cont = 2, j = i;
+    while (j>0){
       printf(" %d", cont);
       cont += 2;
+      j--;
     }
     printf("\n");
+    i--;
   }
 
   return 0;
