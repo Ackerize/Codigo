@@ -13,6 +13,7 @@ int main()
 
     x_expo=(x)*(x)*(x);
     frac = x;
+    resultado = x;
 
     for(int i =0; i <=10; i++){
       resultado += ((num)/((den)*(den_expo)))*(x_expo);
@@ -34,7 +35,7 @@ int main()
         den = den * aux;
         den_expo= den_expo+2;
         x_expo= x_expo*(x)*(x);
-    }while((resultado - frac) >= 0.001);
+    }while((resultado - frac) >= 0.0001);
     
     printf(" El valor de la serie es: %f\n", frac);
 
