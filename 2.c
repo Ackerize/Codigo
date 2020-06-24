@@ -11,6 +11,7 @@ void multiplicacion(struct complejo,struct complejo);
 
 int main(){
 	pedirDatos();
+  suma(z1, z2);
 	multiplicacion(z1, z2);
 	return 0;
 } 
@@ -24,6 +25,7 @@ void pedirDatos(){
 	printf("Digite el segundo numero complejo: \n");
 	printf("Digite la parte real: "); scanf("%f", &z2.real);
 	printf("Digite la parte imaginaria: "); scanf("%f", &z2.imaginaria);
+  printf("\n");
 }
 
 void multiplicacion(struct complejo z1,struct complejo z2){
@@ -38,5 +40,6 @@ void suma(struct complejo z1,struct complejo z2){
 	z1.real += z2.real;
 	z1.imaginaria += z2.imaginaria;
 	printf("La suma es: %f , %f j", z1.real, z1.imaginaria);
+  printf("\n");
 }
 
